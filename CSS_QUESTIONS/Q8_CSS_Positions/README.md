@@ -1,0 +1,80 @@
+# Q8 CSS Postions
+
+
+- Tech: HTML5, CSS3
+
+
+## Before
+
+
+![Before](./Q8_Before.png)
+
+
+## After
+
+
+![After](./Q8_After.png)
+
+
+## Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            body {
+                height: 200vh;
+            }
+            .container {
+                margin-top: 200px;
+                border: 2px solid #000000;
+                height: 50vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            p {
+                border: 1px solid #000000;
+                background-color: #ffff00;
+                padding: 25px;
+            }
+            .static {
+                /* Default Value For All Elements */
+                position: static;
+            }
+            .relative {
+                position: relative;
+                top: 50px;
+            }
+            .absolute {
+                position: absolute;
+                bottom: 300px;
+                left: 50px;
+            }
+            .fixed {
+                position: fixed;
+                bottom: 100px;
+            }
+            .sticky {
+                position: sticky;
+                top: 50px;
+            }
+            .float {
+                float: right;
+                margin-top: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="float">SIX</p>
+        <div class="container">
+            <p class="static">ONE</p>
+            <p class="relative">TWO</p>
+            <p class="absolute">THREE</p>
+            <p class="fixed">FOUR</p>
+            <p class="sticky">FIVE</p>
+        </div>
+    </body>
+</html>
+```
