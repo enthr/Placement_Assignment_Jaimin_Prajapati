@@ -1,0 +1,93 @@
+:root {
+    --color-light-gray: #C5C6C0;
+    --color-nav-gray: #ABABA9;
+    --color-light-blue: #B5D2EB;
+    --color-normal-gray: #797977;
+    --color-blue: #5C9ECD;
+    --color-white: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-white);
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 10vh;
+}
+
+.header__logo {
+    background-color: var(--color-blue);
+    width: 30%;
+    height: 100%;
+}
+
+.header__nav {
+    background-color: var(--color-nav-gray);
+    width: 70%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__hero {
+    background-color: var(--color-normal-gray);
+    height: 30vh;
+}
+
+.main__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 30vh;
+}
+
+.main__cards div {
+    background-color: var(--color-light-blue);
+    height: 100%;
+}
+
+.footer {
+    background-color: var(--color-light-gray);
+    height: 15vh;
+}
+
+@media screen and (min-width: 768px) {
+    .main__hero {
+        height: 50vh;
+    }
+    .main__cards {
+        flex-direction: row;
+        height: 50vh;
+    }
+    .main__cards div {
+        flex: 1;
+        height: 100%;
+    }
+    .footer {
+        height: 30vh;
+    } 
+}
