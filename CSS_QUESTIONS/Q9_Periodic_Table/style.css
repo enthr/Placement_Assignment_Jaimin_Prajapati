@@ -1,0 +1,110 @@
+@import url(https://fonts.bunny.net/css?family=poppins:100,200,300,400,500,600,700,800,900);
+
+:root {
+    --color-white: #FAFAFA;
+    --color-black: #212121;
+    --color-light-red: #FF9999;
+    --color-light-yellow: #FFFE8D;
+    --color-light-blue: #93CCFF;
+    --color-light-green: #97FE9A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-white);
+    min-height: 100vh;
+}
+
+.header {
+    margin: 1rem;
+    border: 1px solid var(--color-black);
+}
+
+.header__h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.main {
+    margin: 1rem;
+    border: 1px solid var(--color-black);
+    min-height: 83vh;
+}
+
+.main__table-container {
+    margin: 1rem;
+    overflow-x: auto;
+}
+
+.main__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px 16px;
+}
+
+.main__table-red {
+    background-color: var(--color-light-red);
+    border: 1px solid var(--color-black);
+    padding: 0.5rem 1rem;
+}
+
+.main__table-yellow {
+    background-color: var(--color-light-yellow);
+    border: 1px solid var(--color-black);
+    padding: 0.5rem 1rem;
+}
+
+.main__table-blue {
+    background-color: var(--color-light-blue);
+    border: 1px solid var(--color-black);
+    padding: 0.5rem 1rem;
+}
+
+.main__table-green {
+    background-color: var(--color-light-green);
+    border: 1px solid var(--color-black);
+    padding: 0.5rem 1rem;
+}
+
+.main__table-head, .main__table-numcol {
+    padding: 0;
+}
+
+.main__table-head div p, .main__table-head, .main__table-numcol {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.main__table-red div p, .main__table-yellow div p, .main__table-blue div p, .main__table-green div p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer {
+    margin: 1rem;
+    border: 1px solid var(--color-black);
+}
+
+.footer__p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
