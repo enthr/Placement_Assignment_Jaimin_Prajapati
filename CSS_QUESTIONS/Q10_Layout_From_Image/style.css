@@ -1,0 +1,117 @@
+:root {
+    --color-white: #FAFAFA;
+    --color-light-turquoise: #C1EBF9;
+    --color-dark-teal: #00BFB1;
+    --color-green: #69DA70;
+    --color-orange: #FFAF4D;
+    --color-yellow: #FFD14C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: var(--color-light-turquoise);
+    color: var(--color-white);
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: var(--color-dark-teal);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.main__aside {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-green);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__section {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-orange);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__section-images {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__section-images div {
+    background-color: var(--color-yellow);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 32px;
+    }
+    .main {
+        flex-direction: row;
+    }
+    .main__aside {
+        width: 30%;
+        height: 100%;
+    }
+    .main__section {
+        width: 70%;
+        height: 100%;
+    }
+    .main__section-images {
+        height: 50%;
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
+    }
+    .main__section-images div {
+        width: 30%;
+    }
+}
