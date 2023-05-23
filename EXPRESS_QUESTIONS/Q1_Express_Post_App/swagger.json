@@ -1,0 +1,54 @@
+{
+	"swagger": "2.0.0",
+	"info": {
+		"version": "1.0.0",
+		"title": "Express Post App",
+		"description": "A Simple Express Server Which Sends 20 Posts"
+	},
+	"host": "localhost:5000",
+	"basePath": "/api",
+	"schemes": ["http"],
+	"paths": {
+		"/post": {
+			"get": {
+				"tags": ["Post"],
+				"summary": "Get Posts",
+				"description": "Get 20 Posts",
+				"responses": {
+					"200": {
+						"description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": "string",
+                                                    "handle": "string",
+                                                    "text": "string",
+                                                    "retweets": "number",
+                                                    "likes": "number",
+                                                    "comments": "number"
+                                                }
+                                            }
+                                        },
+                                        "message": {
+                                            "type": "string"
+                                        },
+                                        "success": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+					}
+				}
+			}
+		}
+	}
+}

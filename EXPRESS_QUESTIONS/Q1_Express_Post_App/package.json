@@ -1,0 +1,24 @@
+{
+	"name": "q1_express_post_app",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Simple Express Server Which Sends 20 posts.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"dev": "nodemon index.js",
+		"swagger-autogen": "node swagger.js"
+	},
+	"author": "Jaimin Prajapati",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"swagger-ui-express": "^4.6.3"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}
