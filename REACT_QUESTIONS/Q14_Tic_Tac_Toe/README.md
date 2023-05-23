@@ -1,5 +1,3 @@
-- 
-
 # Q14 Tic Tac Toe App Using Class Components
 
 
